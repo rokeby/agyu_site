@@ -22,8 +22,8 @@ body, html {
 
 button#info-button {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    bottom: 20px;
+    left: 20px;
     background-color: transparent;
     color: white;
     border: 1px solid white;
@@ -46,17 +46,10 @@ button#info-button {
     max-width: 100%; /* Ensure it doesn't exceed the container width */
 }
 
-@media screen and (min-width: 768px) {
-    /* For screens larger than 768px (desktop) */
-    #credits {
-        width: 33.33%; /* One-third of the page width */
-    }
-}
-
 button#back-button {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    bottom: 20px;
+    left: 20px;
     background-color: transparent;
     color: white;
     border: 1px solid white;
@@ -85,4 +78,18 @@ button#back-button {
 .logo img {
     max-width: 200px; /* Adjust the maximum width as needed */
     height: auto;
+}
+
+@media screen and (min-width: 768px) {
+    /* For screens larger than 768px (desktop) */
+    #credits {
+        width: 33.33%; /* One-third of the page width */
+    }
+
+    button#info-button, button#back-button {
+        position: absolute;
+        top: 20px; /* Adjust the top position for desktop */
+        right: 20px; /* Adjust the right position for desktop */
+        bottom: auto; /* Reset the bottom position for desktop */
+        left: auto; /* Reset the left position for desktop */   }
 }
