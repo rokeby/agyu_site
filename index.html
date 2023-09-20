@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Full-Screen Vimeo Video</title>
+</head>
+<body>
+    <button id="info-button" onclick="showCredits()">INFO</button>
+    <div class="video-container">
+        <iframe id="video" src="https://player.vimeo.com/video/865940928?h=667ad586f6" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div id="credits" class="hidden">
+        <h1 style="font-family: Helvetica, sans-serif;">Credits</h1>
+        <p style="font-family: Helvetica, sans-serif;">
+            Gary Zhexi Zhang, The Tourist, 2023, is commissioned by the Art Gallery of York University (AGYU), Toronto and curated by Clara Halpern, assistant curator, exhibitions, through their digital art stream.<br><br>
+
+            Special thanks to Gary Zhexi Zhang, for this artwork, and for participating in …this is not made of language but energy, AGYU’s series of conversations related to born-digital art, and for inviting us to co-publish Catastrophe Time! with Strange Attractor Press.<br><br>
+
+            This commission is generously supported by the Canada Council for the Arts through its Digital Strategy Fund.<br><br>
+
+            AGYU acknowledges our team, in particular Michael Maranda, assistant curator, publications; Felicia Mings, curator; and Jenifer Papararo curator/director for supporting the realization of this project. We are thankful to filmmaker Zach Jama for speaking at the launch event on September 29, 2023, held offsite at Small World Music, Toronto, and to event Media Partners InterAccess and Images Festival.<br><br>
+
+            The Tourist is commissioned through the AGYU’s digital art stream. This year’s commissions also include Dele Adeyemo’s From Longhouse to Highrise: The Course of Empire, curated by Felicia Mings.<br><br>
+
+            [logos]<br><br>
+
+            AGYU, York U, CCA)
+        </p>
+    </div>
+    <button id="back-button" class="hidden" onclick="showVideo()">Back to Video</button>
+    <div id="logos" class="hidden">
+        <h2>Logos</h2>
+        <div class="logo">
+            <img src="placeholder_logo1.png" alt="Logo 1">
+        </div>
+        <div class="logo">
+            <img src="placeholder_logo2.png" alt="Logo 2">
+        </div>
+        <div class="logo">
+            <img src="placeholder_logo3.png" alt="Logo 3">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

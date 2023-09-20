@@ -1,0 +1,88 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio (change as needed) */
+}
+
+#video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+button#info-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+.hidden {
+    display: none;
+}
+
+#credits {
+    color: white;
+    text-align: left;
+    padding: 20px;
+    position: relative;
+    margin: 0 auto; /* Center the element horizontally */
+    max-width: 100%; /* Ensure it doesn't exceed the container width */
+}
+
+@media screen and (min-width: 768px) {
+    /* For screens larger than 768px (desktop) */
+    #credits {
+        width: 33.33%; /* One-third of the page width */
+    }
+}
+
+button#back-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#logos {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+#logos h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.logo {
+    display: inline-block;
+    margin: 0 20px; /* Adjust the margin as needed */
+}
+
+.logo img {
+    max-width: 200px; /* Adjust the maximum width as needed */
+    height: auto;
+}
