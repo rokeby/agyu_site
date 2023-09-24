@@ -5,6 +5,15 @@ body, html {
     background-color: black;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightblue;
+}
+
 .video-container {
     position: relative;
     overflow: hidden;
@@ -24,7 +33,7 @@ button#info-button {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: transparent;
+    background-color: black;
     color: white;
     border: 1px solid white;
     padding: 10px 20px;
@@ -47,10 +56,10 @@ button#info-button {
 }
 
 button#back-button {
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     left: 20px;
-    background-color: transparent;
+    background-color: black;
     color: white;
     border: 1px solid white;
     padding: 10px 20px;
@@ -59,25 +68,26 @@ button#back-button {
 }
 
 #logos {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    padding: 2vh;
+    justify-content: space-between;
     color: white;
     text-align: center;
-    padding: 20px;
     position: relative;
 }
 
-#logos h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
 .logo {
-    display: inline-block;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: inherit;
     margin: 0 20px; /* Adjust the margin as needed */
 }
 
 .logo img {
-    max-width: 200px; /* Adjust the maximum width as needed */
-    height: auto;
+    width: inherit;
 }
 
 @media screen and (min-width: 768px) {
@@ -92,4 +102,9 @@ button#back-button {
         right: 20px; /* Adjust the right position for desktop */
         bottom: auto; /* Reset the bottom position for desktop */
         left: auto; /* Reset the left position for desktop */   }
+
+    .logo {
+        width: 80%;
+        max-height: 50%;
+    }
 }
