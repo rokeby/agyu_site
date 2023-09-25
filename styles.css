@@ -1,8 +1,31 @@
+@font-face {
+   font-family: 'AkzidenzGrotesk-Regular';
+      src: local("AkzidenzGrotesk-Regular"), url('fonts/AkzidenzGrotesk-Regular.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'AkzidenzGrotesk-Italic';
+      src: local("AkzidenzGrotesk-Italic"), url('fonts/AkzidenzGrotesk-Italic.woff') format('woff');
+   font-weight: normal;
+   font-style: italic;
+}
+
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     background-color: black;
+    font-family: 'AkzidenzGrotesk-Regular';
+}
+
+h1 {
+    font-family: 'AkzidenzGrotesk-Regular';
+}
+
+em {
+ font-family: 'AkzidenzGrotesk-Italic';   
 }
 
 a {
