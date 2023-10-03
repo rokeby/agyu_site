@@ -18,6 +18,12 @@ body, html {
     height: 100%;
     background-color: black;
     font-family: 'AkzidenzGrotesk-Regular';
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 h1 {
@@ -72,7 +78,7 @@ button#info-button {
 #credits {
     color: white;
     text-align: left;
-    padding: 20px;
+    padding: 0 20px 0 20px;
     position: relative;
     margin: 0 auto; /* Center the element horizontally */
     max-width: 100%; /* Ensure it doesn't exceed the container width */
@@ -94,7 +100,7 @@ button#back-button {
     width: 100%;
     display: flex;
     flex-flow: row;
-    padding: 2vh;
+    padding: 2vh 0 0 2vh;
     justify-content: space-between;
     color: white;
     text-align: center;
